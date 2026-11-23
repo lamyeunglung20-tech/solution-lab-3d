@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Interactive 3D experiments about solutes, solvents, and solutions.">
+  <title>Solution Lab · 溶液實驗室</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app" id="app">
+    <div class="app-frame">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">✳</span><span>SOLUTION LAB<small>溶液實驗室</small></span></div>
+        <nav class="scenario-switch" aria-label="Choose experiment"><button type="button" data-scenario="milkTea" aria-pressed="true"><strong>Milk tea</strong><small>大快活</small></button><button type="button" data-scenario="hospital" aria-pressed="false"><strong>Calcium + C</strong><small>康鈣C · 醫院</small></button></nav>
+      </header>
+      <section class="game-card" id="game-card" aria-labelledby="question-title">
+        <div class="visual-panel">
+          <div class="photo-backdrop" id="photo-backdrop" role="img" aria-label="Fairwood restaurant"></div>
+          <div class="photo-tint"></div>
+          <div class="model-wrap" id="model-wrap"><span class="model-fallback" id="model-fallback" hidden>3D preview unavailable</span></div>
+          <div class="visual-bottom"><div><div class="item-title" id="item-title">HOT WATER</div><div class="item-subtitle" id="item-subtitle">熱水</div></div><div class="rotate-hint" id="rotate-hint">DRAG TO ROTATE <span aria-hidden="true">↻</span></div></div>
+        </div>
+        <div class="question-panel">
+          <div class="progress-head"><span id="step-label">01 / 03</span></div>
+          <div class="progress-track" id="progress-track" role="progressbar" aria-label="Game progress" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><span id="progress-fill"></span></div>
+          <div class="question-body">
+            <h1 id="question-title">What is hot water?</h1>
+            <p class="question-zh" id="question-zh">熱水屬於哪一類？</p>
+            <div class="choices" id="choices" role="group" aria-label="Choose one answer"></div>
+            <div class="observation" id="observation" hidden><div class="observation-line"><span id="observation-label">Watch closely</span><span id="observation-percent">0%</span></div><div class="observation-track"><span id="observation-fill"></span></div></div>
+            <p class="sr-only" id="status" aria-live="polite"></p>
+          </div>
+          <div class="question-actions" id="question-actions" hidden><button class="replay-button" id="replay-button" type="button" hidden>Replay animation <span>重播動畫</span></button><button class="next-button" id="next-button" type="button" hidden>Continue</button></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="result-overlay" id="result-overlay" role="dialog" aria-modal="true" aria-labelledby="result-title" hidden><div class="result-card"><div class="result-icon" aria-hidden="true">✓</div><h2 id="result-title">Solution formed!</h2><p class="result-zh" id="result-zh">形成溶液！</p><p id="result-explanation">The soluble ingredients in the milk tea powder dissolved in hot water. This is a simplified model of instant milk tea.</p><button id="restart-button" type="button">Play again <span>再玩一次</span></button></div></div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
