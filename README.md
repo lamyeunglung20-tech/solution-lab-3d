@@ -2,9 +2,9 @@
 
 An interactive 3D learning game about solutes, solvents, and solutions. Students identify the solute and solvent, watch a mixing animation, then decide whether a solution forms. The interface uses English first, with Chinese support.
 
-**Play online:** https://solute-solvent-solution-lab.marcolam20000.chatgpt.site/
+**Play online:** https://lamyeunglung20-tech.github.io/solution-lab-3d/
 
-**Download the standalone website:** https://solute-solvent-solution-lab.marcolam20000.chatgpt.site/solution-lab-download.zip
+**Download the standalone website:** https://lamyeunglung20-tech.github.io/solution-lab-3d/solution-lab-download.zip
 
 **Download the GitHub source ZIP:** https://github.com/lamyeunglung20-tech/solution-lab-3d/archive/refs/heads/main.zip
 
